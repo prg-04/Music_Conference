@@ -49,60 +49,63 @@ const speakersData = [
   },
 ];
 
-function renderSpeakers(speakersData) {
-  var speakersSection = document.getElementById("speakers");
-  var speakersContainer = document.createElement("div");
-  speakersContainer.className = "cards";
+function renderSpeakersOnHomePage(speakersData) {
+  if (location.pathname === "/") {
+    var speakersSection = document.getElementById("speakers");
+    var speakersContainer = document.createElement("div");
+    speakersContainer.className = "cards";
 
-  for (var i = 0; i < speakersData.length; i++) {
-    const speaker = speakersData[i];
-    const { name, position, aboutAuthor, imgSrc, imgAlt } = speaker;
-    var card = document.createElement("div");
-    card.className = "card";
+    for (var i = 0; i < speakersData.length; i++) {
+      const speaker = speakersData[i];
+      const { name, position, aboutAuthor, imgSrc, imgAlt } = speaker;
+      var card = document.createElement("div");
+      card.className = "card";
 
-    var imagesContainer = document.createElement("div");
-    imagesContainer.className = "imgs";
+      var imagesContainer = document.createElement("div");
+      imagesContainer.className = "imgs";
 
-    var checkedImage = document.createElement("img");
-    checkedImage.className = "checked";
-    checkedImage.src = "./assets/checked.png";
-    checkedImage.alt = "checked-image";
-    imagesContainer.appendChild(checkedImage);
+      var checkedImage = document.createElement("img");
+      checkedImage.className = "checked";
+      checkedImage.src = "./assets/checked.png";
+      checkedImage.alt = "checked-image";
+      imagesContainer.appendChild(checkedImage);
 
-    var speakerImage = document.createElement("img");
-    speakerImage.className = "spkr";
-    speakerImage.src = imgSrc;
-    speakerImage.alt = imgAlt;
-    imagesContainer.appendChild(speakerImage);
+      var speakerImage = document.createElement("img");
+      speakerImage.className = "spkr";
+      speakerImage.src = imgSrc;
+      speakerImage.alt = imgAlt;
+      imagesContainer.appendChild(speakerImage);
 
-    card.appendChild(imagesContainer);
+      card.appendChild(imagesContainer);
 
-    var textContainer = document.createElement("div");
-    textContainer.className = "text";
+      var textContainer = document.createElement("div");
+      textContainer.className = "text";
 
-    var speakerName = document.createElement("h5");
-    speakerName.textContent = name;
-    textContainer.appendChild(speakerName);
+      var speakerName = document.createElement("h5");
+      speakerName.textContent = name;
+      textContainer.appendChild(speakerName);
 
-    var speakerPosition = document.createElement("p");
-    speakerPosition.className = "position";
-    speakerPosition.textContent = position;
-    textContainer.appendChild(speakerPosition);
+      var speakerPosition = document.createElement("p");
+      speakerPosition.className = "position";
+      speakerPosition.textContent = position;
+      textContainer.appendChild(speakerPosition);
 
-    var speakerAboutAuthor = document.createElement("p");
-    speakerAboutAuthor.className = "abt-author";
-    speakerAboutAuthor.textContent = aboutAuthor;
-    textContainer.appendChild(speakerAboutAuthor);
+      var speakerAboutAuthor = document.createElement("p");
+      speakerAboutAuthor.className = "abt-author";
+      speakerAboutAuthor.textContent = aboutAuthor;
+      textContainer.appendChild(speakerAboutAuthor);
 
-    card.appendChild(textContainer);
+      card.appendChild(textContainer);
 
-    speakersContainer.appendChild(card);
+      speakersContainer.appendChild(card);
+    }
+
+    speakersSection.appendChild(speakersContainer);
   }
-
-  speakersSection.appendChild(speakersContainer);
 }
 
-renderSpeakers(speakersData);
+
+renderSpeakersOnHomePage(speakersData);
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".toggle");

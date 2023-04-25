@@ -11,6 +11,9 @@
 $primary: #272a31;
 $secondary: #ec5242;
 
+.navbar {
+  display: none;
+}
 #navigation {
   display: flex;
   justify-content: space-between;
@@ -521,7 +524,7 @@ $secondary: #ec5242;
   flex-direction: column;
   align-items: center;
   background-image: url("./assets/home-bg-desk.png");
-  margin-top: 4rem;
+  margin-top: 5.5rem;
   width: 100%;
 
   h3 {
@@ -678,8 +681,8 @@ $secondary: #ec5242;
         opacity: 0;
         background-color: rgba(152, 13, 13, 0.7);
         display: flex;
-        flex-direction: column;   
-        justify-content: center;     
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         transition: opacity 0.3s ease;
 
@@ -695,15 +698,13 @@ $secondary: #ec5242;
       }
 
       &:hover {
-       .overlay {
+        .overlay {
           opacity: 1;
         }
       }
     }
   }
 }
-
-
 
 @media screen and (min-width: 426px) {
   #hero {
@@ -809,7 +810,25 @@ $secondary: #ec5242;
 }
 
 @media screen and (min-width: 600px) {
+  .navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $primary;
+    z-index: 30;
+
+    a {
+      color: #fff;
+      font-family: "Lato", sans-serif;
+    }
+  }
   #navigation {
+    top: 2rem;
     #navlinks {
       display: block;
     }
@@ -822,6 +841,7 @@ $secondary: #ec5242;
     padding: 0 3.5rem 2rem;
     .intro {
       h2 {
+        margin-top: 2.5rem;
         font-size: 2.4rem;
       }
       h1 {
@@ -1037,6 +1057,7 @@ $secondary: #ec5242;
     }
 
     h1 {
+      margin-top: 3rem;
       font-size: 4rem;
     }
     .reachOut {
