@@ -8,6 +8,18 @@
       src="https://kit.fontawesome.com/0ec53d8e70.js"
       crossorigin="anonymous"></script>
     <title>Music Conference</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Add Slick Carousel JavaScript library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -17,12 +29,12 @@
       /></a>
       <nav id="navlinks">
         <ul class="navlinks">
-          <li class="link"><a href="">About</a></li>
-          <li class="link"><a href="">Program</a></li>
-          <li class="link"><a href="">Join</a></li>
-          <li class="link"><a href="">Sponsor</a></li>
-          <li class="link"><a href="">News</a></li>
-          <li class="link"><a href="">CC Campaign</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="/">Program</a></li>
+          <li class="link"><a href="/">Join</a></li>
+          <li class="link"><a href="/">Sponsor</a></li>
+          <li class="link"><a href="/">News</a></li>
+          <li class="link"><a href="/">CC Campaign</a></li>
         </ul>
       </nav>
       <div class="toggle">
@@ -114,10 +126,13 @@
         <h2>Speakers</h2>
         <hr />
       </div>
-      <div class="cards">
+      <!-- <div class="cards">
         <div class="card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker1.jpg" alt="Yochai" />
           </div>
           <div class="text">
@@ -134,7 +149,10 @@
         </div>
         <div class="card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker2.jpg" alt="Kilnam" />
           </div>
           <div class="text">
@@ -149,7 +167,10 @@
         </div>
         <div class="card toggle-card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker3.jpg" alt="SohYeong" />
           </div>
           <div class="text">
@@ -166,7 +187,10 @@
         </div>
         <div class="card toggle-card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker4.jpg" alt="Julia" />
           </div>
           <div class="text">
@@ -182,7 +206,10 @@
         </div>
         <div class="card toggle-card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker5.jpg" alt="Lila" />
           </div>
           <div class="text">
@@ -200,7 +227,10 @@
         </div>
         <div class="card toggle-card">
           <div class="imgs">
-            <img class="checked" src="./assets/checked.png" alt="checked-image" />
+            <img
+              class="checked"
+              src="./assets/checked.png"
+              alt="checked-image" />
             <img class="spkr" src="./assets/speaker6.jpg" alt="Ryan" />
           </div>
           <div class="text">
@@ -216,17 +246,62 @@
         </div>
       </div>
       <div class="card-btns">
-        <button class="more">MORE <span><i class="fa-solid fa-chevron-down"></i></span></button>
-        <button class="less">LESS <span><i class="fa-sharp fa-solid fa-chevron-up"></i></span></button>
-      </div>
+        <button class="more">
+          MORE <span><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <button class="less">
+          LESS <span><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
+        </button>
+      </div> -->
     </section>
     <section id="partners">
       <div class="partner-ttl">
         <h2>Partner</h2>
         <hr />
       </div>
-      
+      <div class="container slider">
+        <div class="partner-logo">
+          <img
+            src="./assets/bettercloud-seeklogo.com-3.svg"
+            alt="bettercloud" />
+        </div>
+        <div class="partner-logo">
+          <img src="./assets/chainx-seeklogo.com-3.svg" alt="chainx" />
+        </div>
+        <div class="partner-logo">
+          <img
+            src="./assets/microsoft-windows-seeklogo.com.svg"
+            alt="microsoft-windows" />
+        </div>
+        <div class="partner-logo">
+          <img
+            src="./assets/stack-bidmachine-seeklogo.com-3.svg"
+            alt="stack-bidmachine" />
+        </div>
+        <div class="partner-logo">
+          <img
+            src="./assets/onduo-by-verily-seeklogo.com-3.svg"
+            alt="onduo-by-verily" />
+        </div>
+        <div class="partner-logo">
+          <img src="./assets/steelorbis-seeklogo.com-3.svg" alt="steelorbis" />
+        </div>
+      </div>
     </section>
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <a href="/" class="logo"
+          ><img src="./assets/Logo.png" alt="Harmony_Hub"
+        /></a>
+      </div>
+      <div class="footer-text">
+        <p>Copyright © 2023 Harmony Hub. All rights reserved. 
+          <span>Designed and developed for the music-conference by Harmony Hub.</span>
+        </p>
+        <p></p>
+      </div>
+    </footer>
 
     <script src="index.js"></script>
   </body>
