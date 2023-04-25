@@ -50,3 +50,27 @@ function displayCountDown() {
 }
 
 setInterval(displayCountDown, 1000);
+
+
+const more = document.querySelector('.more');
+const less = document.querySelector('.less');
+const toggleCards = document.querySelectorAll('.toggle-card');
+
+console.log(toggleCards)
+
+
+more.addEventListener('click', () => {
+  more.classList.add('hide');
+  less.classList.add('show')
+  toggleCards.forEach((card) => {
+    card.classList.add('open');
+  });
+});
+
+less.addEventListener('click', () => {
+  more.classList.remove('hide');
+  less.classList.remove('show')
+  toggleCards.forEach((card) => {
+    card.classList.remove('open');
+  });
+})

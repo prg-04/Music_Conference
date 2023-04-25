@@ -154,10 +154,10 @@ $secondary: #ec5242;
 
 #hero {
   margin-top: 5rem;
-  height: 100vh;
+  height: 100%;
   background-image: url("./assets/home-bg-desk.png");
   background-repeat: no-repeat;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 
   .intro {
     display: flex;
@@ -193,14 +193,233 @@ $secondary: #ec5242;
     }
   }
   .date {
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     .countDown {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
     .where {
-        margin-top: 0.5rem;
-        font-size: 0.9rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+#program {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  background-image: url("./assets/diamond.png");
+  background-color: $primary;
+  padding-bottom: 3rem;
+
+  .prg-ttl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+
+    h3 {
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    hr {
+      width: 50px;
+      border-color: #ec5242;
+      margin-top: 0.7rem;
+    }
+  }
+
+  .programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+
+    .program {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+      background-image: url("./assets/diamond.png");
+      background-color: rgba(93, 93, 93, 0.4);
+      height: 7rem;
+      width: 100%;
+
+      img {
+        width: 40px;
+        height: auto;
+      }
+      &:nth-child(3) {
+        img {
+          filter: invert(100%);
+        }
+      }
+
+      h5 {
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        color: $secondary;
+        margin: 0.6rem 0;
+      }
+
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.15rem;
+        text-align: start;
+        color: #fff;
+        width: 50%;
+      }
+    }
+  }
+
+  .seePrg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    a {
+      display: none;
+    }
+
+    button {
+      align-self: center;
+      font-family: "Lato", sans-serif;
+      background-color: $secondary;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+    }
+  }
+}
+
+#speakers {
+  display: flex;
+  flex-direction: column;
+
+  .spkr-ttl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    hr {
+      width: 50px;
+      border-color: #ec5242;
+      margin-top: 0.7rem;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 1rem;
+    margin-top: 2rem;
+
+    .card {
+      display: flex;
+      justify-content: space-between;
+
+      .imgs {
+        position: relative;
+
+        .checked {
+          width: 70px;
+          opacity: 0.8;
+        }
+
+        .spkr {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+        }
+      }
+
+      .text {
+        width: 57%;
+
+        h5 {
+          font-family: "Lato", sans-serif;
+          font-weight: 800;
+          font-size: 1rem;
+        }
+
+        .position {
+          margin: 0.5rem 0;
+          font-size: 0.9rem;
+          color: $secondary;
+        }
+      }
+
+      &:nth-child(2) {
+        .text {
+          .abt-author {
+            margin-top: 1rem;
+          }
+        }
+      }
+
+      &.open {
+        display: flex;
+      }
+    }
+
+    .toggle-card {
+      display: none;
+    }
+  }
+
+  .card-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+
+    .more {
+      width: 90%;
+      padding: 0.7rem;
+
+      .fa-chevron-down {
+        color: $secondary;
+        font-size: 1rem;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .less {
+      width: 90%;
+      padding: 0.7rem;
+      display: none;
+
+      .fa-chevron-up {
+        color: $secondary;
+        font-size: 1rem;
+      }
+
+      &.show {
+        display: block;
+      }
     }
   }
 }
@@ -227,6 +446,53 @@ $secondary: #ec5242;
       }
     }
   }
+
+  #program {
+    .programs {
+      .program {
+        img {
+          width: 50px;
+        }
+
+        h5 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.35rem;
+        }
+      }
+    }
+
+    .seePrg {
+      button {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  #speakers {
+    .cards {
+      .card {
+        .imgs {
+          .checked {
+            width: 80px;
+          }
+
+          .spkr {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+
+    .card-btns {
+        margin-top: 3.5rem;
+        }
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -240,7 +506,7 @@ $secondary: #ec5242;
   }
 
   #hero {
-    padding: 0 3.5rem;
+    padding: 0 3.5rem 2rem;
     .intro {
       h2 {
         font-size: 2.4rem;
@@ -271,6 +537,33 @@ $secondary: #ec5242;
       }
     }
   }
+
+  #program {
+    .seePrg {
+      button {
+        padding: 2rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  #speakers {
+    .cards {
+      gap: 6rem;
+      .card {
+        .text {
+          width: 67%;
+        }
+      }
+
+      .toggle-card {
+        display: flex;
+      }
+    }
+
+    .card-btns {
+      display: none;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -279,6 +572,7 @@ $secondary: #ec5242;
   }
 
   #hero {
+    padding: 0 3.5rem 3rem;
     .intro {
       h2 {
         font-size: 2.8rem;
@@ -290,6 +584,119 @@ $secondary: #ec5242;
     }
     .desc {
       width: 65%;
+    }
+  }
+
+  #program {
+    padding-bottom: 2.5rem;
+
+    .programs {
+      flex-direction: row;
+
+      .program {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        min-height: 27rem;
+
+        h5 {
+          margin: 0.5rem 0;
+          font-size: 1.3rem;
+        }
+
+        p {
+          width: 100%;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          text-align: center;
+          text-align: center;
+        }
+      }
+    }
+
+    .seePrg {
+      button {
+        display: none;
+      }
+
+      a {
+        display: block;
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #speakers {
+    .cards {
+      .card {
+        .text {
+          width: 75%;
+
+          h5 {
+            font-size: 1.4rem;
+          }
+
+          .position {
+            font-size: 1rem;
+          }
+
+          .abt-author {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #program {
+    .programs {
+      padding: 0 3.5rem;
+      .program {
+        min-height: 23rem;
+      }
+    }
+  }
+
+  #speakers {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      padding: 0 3.5rem;
+      .card {
+        .text {
+          width: 58%;
+
+          h5 {
+            font-size: 1.2rem;
+          }
+
+          .position {
+            font-size: 1rem;
+          }
+
+          .abt-author {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #speakers {
+    .cards {
+      .card {
+        .text {
+          width: 68%;
+        }
+      }
     }
   }
 }
