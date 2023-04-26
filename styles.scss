@@ -211,7 +211,6 @@ $secondary: #ec5242;
 #program {
   display: flex;
   flex-direction: column;
-  // align-items: center;
   background-image: url("./assets/diamond.png");
   background-color: $primary;
   padding-bottom: 3rem;
@@ -246,11 +245,11 @@ $secondary: #ec5242;
     .program {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      flex-direction: column;
       padding: 1rem;
       background-image: url("./assets/diamond.png");
       background-color: rgba(93, 93, 93, 0.4);
-      height: 7rem;
+      height: 15rem;
       width: 100%;
 
       img {
@@ -265,7 +264,7 @@ $secondary: #ec5242;
 
       h5 {
         font-family: "Lato", sans-serif;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 800;
         color: $secondary;
         margin: 0.6rem 0;
@@ -273,12 +272,12 @@ $secondary: #ec5242;
 
       p {
         font-family: "Lato", sans-serif;
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 400;
         line-height: 1.15rem;
-        text-align: start;
+        text-align: center;
         color: #fff;
-        width: 50%;
+        width: 90%;
       }
     }
   }
@@ -689,6 +688,7 @@ $secondary: #ec5242;
         p {
           color: #fff;
           font-size: 18px;
+          text-align: center;
 
           &:nth-child(1) {
             font-size: 1.8rem;
@@ -732,6 +732,9 @@ $secondary: #ec5242;
   #program {
     .programs {
       .program {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 8rem;
         img {
           width: 50px;
         }
@@ -743,6 +746,8 @@ $secondary: #ec5242;
         p {
           font-size: 1rem;
           line-height: 1.35rem;
+          text-align: start;
+          width: 50%;
         }
       }
     }
@@ -938,9 +943,6 @@ $secondary: #ec5242;
   #past-summit {
     .past-summit_imgs {
       flex-direction: row;
-
-      img {
-      }
     }
   }
 }
@@ -964,6 +966,13 @@ $secondary: #ec5242;
     .desc {
       width: 65%;
     }
+
+    .date {
+      .countDown {
+        background-color: #fff;
+        width: fit-content;
+      }
+    }
   }
 
   #program {
@@ -971,16 +980,15 @@ $secondary: #ec5242;
 
     .programs {
       flex-direction: row;
-
       .program {
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 3rem;
-        min-height: 27rem;
+        min-height: 35rem;
 
         h5 {
           margin: 0.5rem 0;
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
 
         p {
@@ -1083,7 +1091,7 @@ $secondary: #ec5242;
     .programs {
       padding: 0 3.5rem;
       .program {
-        min-height: 23rem;
+        min-height: 27rem;
       }
     }
   }
@@ -1122,9 +1130,24 @@ $secondary: #ec5242;
       }
     }
   }
+
+  #about-hero {
+    .reachOut {
+      background-color: #fff;
+      height: 2.5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  #program {
+    .programs {
+      .program {
+        min-height: 23rem;
+      }
+    }
+  }
+
   #speakers {
     .cards {
       .card {

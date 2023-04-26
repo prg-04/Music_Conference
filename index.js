@@ -1,53 +1,61 @@
 const speakersData = [
   {
-    name: "Yochai Benkler",
+    name: "John Ondoro",
     position:
-      "Berkman Professor of Enterpreneurship legal studies at Harvard Law School",
+      "Music Producer and Composer, Founder of East African Music Academy",
     aboutAuthor:
-      "Benkler studies commons based peer production and published his seminal book The Wealth of Networks in 2006",
-    imgSrc: "./assets/speaker1.jpg",
-    imgAlt: "Yochai",
+      "John Ondoro is a renowned music producer and composer in East Africa. He is the founder of the East African Music Academy, a platform that promotes music education and talent development in the region.",
+    imgSrc: "./assets/ondoro.jpg",
+    imgAlt: "John",
   },
   {
-    name: "Kilnam Chon",
+    name: "Wanjiku Kamau",
     aboutAuthor:
-      "Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital commons. In 2012, he was inducted into the inaugural class of the Internet Society's (ISOC) Internet Hall of Fame.",
-    imgSrc: "./assets/speaker2.jpg",
-    imgAlt: "Kilnam",
+      " Wanjiku Kamau is a music business consultant and the founder of Music Connect Africa, a platform that connects musicians and stakeholders in the music industry across East Africa. She is a prominent advocate for the growth and development of the music business in the region.",
+    imgSrc: "./assets/wanjiku.jpg",
+    imgAlt: "Wanjiku",
   },
   {
-    name: "SohYeong Noh",
-    position: "Director of Art Center Nabi and a board of members of CC Kenya",
+    name: "Amina Abdi Rabar",
+    position: "TV and Radio Host, Music Influencer",
     aboutAuthor:
-      "As the main venue for new media art production in Kenya, Nabi promotes cross-disciplinary collaboration and understanding among science, technology, humanities, and the arts.",
+      "Amina Abdi Rabar is a renowned TV and radio host and a music influencer in East Africa. She has a wide following and is known for her passion for music and her contributions to the music industry in the region.",
     imgSrc: "./assets/speaker3.jpg",
-    imgAlt: "SohYeong",
+    imgAlt: "Amina",
   },
   {
-    name: "Julia Leda",
-    position: "President of Young Pirates of Europe",
+    name: "Sauti Sol",
+    position: "Award-winning Afro-pop Band",
     aboutAuthor:
-      "European integration, political democracy, and participation of youth through online as her major condemn, Leda's report outlining potential changes to EU copyright law was approved by the Parliament in July.",
-    imgSrc: "./assets/speaker4.jpg",
-    imgAlt: "Julia",
+      "Sauti Sol is an award-winning Afro-pop band from East Africa. Known for their unique blend of African and contemporary music, they have gained international recognition and have become one of the most successful bands in the region.",
+    imgSrc: "./assets/Sauti-Sol-1.jpg",
+    imgAlt: "Sauti-sol",
   },
   {
-    name: "Lila Tretikov",
-    position: "Executive Director of the Wikimedia Foundation",
+    name: "Diamond Platnumz",
+    position: "  Tanzanian bongo flava artist",
     aboutAuthor:
-      "Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languages and used by nearly half a billion people around the world every month.",
-    imgSrc: "./assets/speaker5.jpg",
-    imgAlt: "Lila",
+      "  Diamond Platnumz is one of the most popular and successful artists in East Africa, with hits such as 'Number one,' 'Marry You,' and 'African Beauty.' His music is a mix of traditional Tanzanian rhythms, pop, and hip-hop, with lyrics that address love, relationships, and social issues.",
+    imgSrc: "./assets/platnumz.jpg",
+    imgAlt: "Diamond",
   },
   {
-    name: "Ryan Merkley",
-    position: "CEO of Creative Commons, ex COO of the Mozilla Foundation",
+    name: "Nneka",
+    position: "Nigerian-German singer and songwriter",
     aboutAuthor:
-      "Ryan had been leading open-source projects at the Mozilla Foundation such as the open source movement.",
-    imgSrc: "./assets/speaker6.jpg",
-    imgAlt: "Ryan",
+      " Nneka's music is a unique blend of hip-hop, reggae, and soul, with politically conscious lyrics that address issues such as poverty, corruption, and social injustice. She has released six studio albums, including 'Victim of Truth' and 'Soul Is Heavy.'",
+    imgSrc: "./assets/Nneka.jpg",
+    imgAlt: "Nneka",
   },
 ];
+
+const div = document.createElement("div");
+div.className = "spkr-ttl";
+div.innerHTML = `
+<h2>Feature Artists</h2>
+        <hr />
+`;
+
 
 function renderSpeakersOnHomePage(speakersData) {
   if (location.pathname === "/") {
@@ -100,10 +108,10 @@ function renderSpeakersOnHomePage(speakersData) {
       speakersContainer.appendChild(card);
     }
 
+    speakersSection.appendChild(div);
     speakersSection.appendChild(speakersContainer);
   }
 }
-
 
 renderSpeakersOnHomePage(speakersData);
 
@@ -124,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const eventDate = new Date("2023-05-01T10:00:00Z");
+  const eventDate = new Date("2023-05-10T10:00:00Z");
 
   function timeRemaining() {
     const now = new Date();
