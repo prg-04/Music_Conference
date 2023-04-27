@@ -100,6 +100,7 @@ function renderSpeakersOnHomePage(speakersData) {
       speakerImage.className = 'spkr';
       speakerImage.src = imgSrc;
       speakerImage.alt = imgAlt;
+      speakerImage.loading = 'lazy';
       imagesContainer.appendChild(speakerImage);
 
       card.appendChild(imagesContainer);
