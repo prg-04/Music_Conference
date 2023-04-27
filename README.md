@@ -87,8 +87,8 @@ The East Africa Music Conference is a two-day event that brings together music i
 
 In order to run this project you need:
 
-    *Internet connection
-    *Device (e.g. laptop, tablet, or smartphone) with web browser
+    * Internet connection
+    * Device (e.g. laptop, tablet, or smartphone) with web browser
 
 ### Setup
 
@@ -96,10 +96,10 @@ To get started with the EA Music Conference website, follow these steps:
 
 Clone this repository to your desired folder:
 
-    - Open your preferred IDE and open the terminal window.
-    - Write the following command in the terminal: git clone followed by the URL of the repository you want to clone.
-    - Press Enter on your keyboard.
-    - Git will start cloning the repository into your selected folder.
+- Open your preferred IDE and open the terminal window.
+- Write the following command in the terminal: git clone followed by the URL of the repository you want to clone.
+- Press Enter on your keyboard.
+- Git will start cloning the repository into your selected folder.
 
 After cloning the repository, navigate to the directory where it was cloned using the command: cd <folder-name>. In this case, the folder name is "EA_Music_Conference". This will give you access to the files needed to run the website.
 
@@ -154,7 +154,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/prg-04/My_Portfolio/issues).
+Feel free to check the [issues page](https://github.com/prg-04/Music_Conference/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
