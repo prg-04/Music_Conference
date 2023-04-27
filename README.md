@@ -43,17 +43,17 @@ The East Africa Music Conference is a two-day event that brings together music i
 
 ### Key Features <a name="key-features"></a>
 
-## Expert Speakers : Our conference features top music industry experts from East Africa and around the world, providing attendees with unique insights and valuable networking opportunities.
+- Expert Speakers : Our conference features top music industry experts from East Africa and around the world, providing attendees with unique insights and valuable networking opportunities.
 
-## Diverse Topics : We cover a wide range of topics, including music production, distribution, marketing, and legal issues. Our sessions are tailored to meet the needs of musicians, producers, managers, and other industry professionals.
+- Diverse Topics : We cover a wide range of topics, including music production, distribution, marketing, and legal issues. Our sessions are tailored to meet the needs of musicians, producers, managers, and other industry professionals.
 
-## Engaging Workshops : Attendees can participate in interactive workshops, where they can learn new skills and techniques from experienced professionals.
+- Engaging Workshops : Attendees can participate in interactive workshops, where they can learn new skills and techniques from experienced professionals.
 
-## Networking Opportunities : Our conference provides a platform for attendees to connect with peers and industry professionals, fostering collaboration and new business opportunities.
+- Networking Opportunities : Our conference provides a platform for attendees to connect with peers and industry professionals, fostering collaboration and new business opportunities.
 
-## Innovative Technology : We showcase the latest music technology and equipment, giving attendees hands-on experience with cutting-edge tools and software.
+- Innovative Technology : We showcase the latest music technology and equipment, giving attendees hands-on experience with cutting-edge tools and software.
 
-## Cultural Diversity : Our conference celebrates the rich diversity of East African music and culture, highlighting the unique styles and traditions of the region.
+- Cultural Diversity : Our conference celebrates the rich diversity of East African music and culture, highlighting the unique styles and traditions of the region.
 
 <!-- LIVE DEMO -->
 
@@ -67,21 +67,21 @@ The East Africa Music Conference is a two-day event that brings together music i
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
--To access the EA Music Conference website, follow these steps:
+- To access the EA Music Conference website, follow these steps:
 
--Open your preferred web browser and go to the website's URL: https://eamusicconference.com.
+- Open your preferred web browser and go to the website's URL: https://eamusicconference.com.
 
--Once you are on the website, you can navigate through the different pages using the menu bar at the top of the screen.
+- Once you are on the website, you can navigate through the different pages using the menu bar at the top of the screen.
 
--If you wish to register for the conference or purchase tickets, you can do so by clicking on the "Register" or "Tickets" buttons on the homepage.
+- If you wish to register for the conference or purchase tickets, you can do so by clicking on the "Register" or "Tickets" buttons on the homepage.
 
--If you would like to view the schedule of events, you can click on the "Schedule" page in the menu bar.
+- If you would like to view the schedule of events, you can click on the "Schedule" page in the menu bar.
 
--The website also offers a "Speakers" page where you can find information about the conference's featured speakers.
+- The website also offers a "Speakers" page where you can find information about the conference's featured speakers.
 
--If you have any questions or concerns, you can navigate to the "Contact" page where you can find information on how to reach the conference organizers.
+- If you have any questions or concerns, you can navigate to the "Contact" page where you can find information on how to reach the conference organizers.
 
--To stay updated on conference news and announcements, you can follow the EA Music Conference on social media by clicking on the icons located at the bottom of the homepage.
+- To stay updated on conference news and announcements, you can follow the EA Music Conference on social media by clicking on the icons located at the bottom of the homepage.
 
 ### Prerequisites
 
@@ -96,10 +96,10 @@ To get started with the EA Music Conference website, follow these steps:
 
 Clone this repository to your desired folder:
 
-    -Open your preferred IDE and open the terminal window.
-    -Write the following command in the terminal: git clone followed by the URL of the repository you want to clone.
-    -Press Enter on your keyboard.
-    -Git will start cloning the repository into your selected folder.
+    - Open your preferred IDE and open the terminal window.
+    - Write the following command in the terminal: git clone followed by the URL of the repository you want to clone.
+    - Press Enter on your keyboard.
+    - Git will start cloning the repository into your selected folder.
 
 After cloning the repository, navigate to the directory where it was cloned using the command: cd <folder-name>. In this case, the folder name is "EA_Music_Conference". This will give you access to the files needed to run the website.
 
