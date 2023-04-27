@@ -14,6 +14,7 @@ $secondary: #ec5242;
 .navbar {
   display: none;
 }
+
 #navigation {
   display: flex;
   justify-content: space-between;
@@ -39,24 +40,12 @@ $secondary: #ec5242;
   #navlinks {
     display: none;
     transition: all 0.5s ease-in-out;
+
     .navlinks {
       display: flex;
       align-items: center;
       gap: 1rem;
       transition: all 0.5s ease-in-out;
-
-      .link {
-        a {
-          font-family: "Lato", sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-          color: $primary;
-
-          &:hover {
-            color: $secondary;
-          }
-        }
-      }
 
       :nth-child(6) {
         border: 3px solid $secondary;
@@ -68,8 +57,22 @@ $secondary: #ec5242;
 
         &:hover {
           border-color: $primary;
+
           a {
             color: $primary;
+          }
+        }
+      }
+
+      .link {
+        .page {
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: $primary;
+
+          &:hover {
+            color: $secondary;
           }
         }
       }
@@ -92,7 +95,7 @@ $secondary: #ec5242;
         margin-top: 3.5rem;
 
         .link {
-          a {
+          .page {
             font-size: 20px;
           }
         }
@@ -155,59 +158,6 @@ $secondary: #ec5242;
   }
 }
 
-#hero {
-  margin-top: 5rem;
-  height: 100%;
-  background-image: url("./assets/home-bg-desk.png");
-  background-repeat: no-repeat;
-  padding: 1.5rem 1.5rem 2rem;
-
-  .intro {
-    display: flex;
-    flex-direction: column;
-    h2 {
-      font-family: "Lato", sans-serif;
-      font-weight: 300;
-      font-size: 1.7rem;
-      color: $secondary;
-      margin-top: 1.5rem;
-    }
-
-    h1 {
-      font-family: "Lato", sans-serif;
-      font-weight: 900;
-      font-size: 1.9rem;
-      -webkit-background-clip: text;
-      -moz-background-inline-policy: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: url("./assets/h1-bg.jpeg");
-    }
-  }
-
-  .desc {
-    background-color: #fff;
-    margin: 1rem 0;
-
-    p {
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      font-size: 1.2rem;
-    }
-  }
-  .date {
-    margin-top: 2rem;
-
-    .countDown {
-      font-size: 1.2rem;
-    }
-    .where {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-    }
-  }
-}
-
 #program {
   display: flex;
   flex-direction: column;
@@ -256,6 +206,7 @@ $secondary: #ec5242;
         width: 40px;
         height: auto;
       }
+
       &:nth-child(3) {
         img {
           filter: invert(100%);
@@ -288,7 +239,7 @@ $secondary: #ec5242;
     width: 100%;
     margin-top: 2rem;
 
-    a {
+    .seePrg-link {
       display: none;
     }
 
@@ -299,6 +250,62 @@ $secondary: #ec5242;
       color: #fff;
       border: none;
       padding: 1rem;
+    }
+  }
+}
+
+#hero {
+  margin-top: 5rem;
+  height: 100%;
+  background-image: url("./assets/home-bg-desk.png");
+  background-repeat: no-repeat;
+  padding: 1.5rem 1.5rem 2rem;
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 1.7rem;
+      color: $secondary;
+      margin-top: 1.5rem;
+    }
+
+    h1 {
+      font-family: "Lato", sans-serif;
+      font-weight: 900;
+      font-size: 1.9rem;
+      -webkit-background-clip: text;
+      -moz-background-inline-policy: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: url("./assets/h1-bg.jpeg");
+    }
+  }
+
+  .desc {
+    background-color: #fff;
+    margin: 1rem 0;
+
+    .prg-desc {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+    }
+  }
+
+  .date {
+    margin-top: 2rem;
+
+    .countDown {
+      font-size: 1.2rem;
+    }
+
+    .where {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -452,43 +459,33 @@ $secondary: #ec5242;
     }
   }
 
-  .container {
-    .partner-logo {
-      img {
+  .carousel-container {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    .carousel-slide {
+      display: inline-block;
+      animation: slide 8s infinite linear;
+
+      .slider-logo {
+        height: 150px;
         filter: invert(70%);
-        height: 100px;
+        margin-right: 1rem;
       }
     }
+  }
 
-    .slick-slide {
-      margin: 0 20px;
-      display: block;
-      float: left;
-      height: 100%;
-      min-height: 1px;
-
-      img {
-        display: block;
-      }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
     }
 
-    .slick-initialized .slick-slide {
-      display: block;
-    }
-
-    .slick-loading .slick-slide {
-      visibility: hidden;
-    }
-    .slick-list {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-
-      &:focus {
-        outline: none;
-      }
+    to {
+      transform: translateX(-100%);
     }
   }
 }
@@ -501,7 +498,7 @@ $secondary: #ec5242;
 
   .footer-logo {
     .logo {
-      img {
+      .footer_logo {
         width: 100px;
       }
     }
@@ -510,7 +507,7 @@ $secondary: #ec5242;
   .footer-text {
     width: 60%;
 
-    p {
+    .copyright {
       span {
         display: none;
       }
@@ -526,7 +523,7 @@ $secondary: #ec5242;
   margin-top: 5.5rem;
   width: 100%;
 
-  h3 {
+  .about-subtitle {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 1.7rem;
@@ -534,7 +531,7 @@ $secondary: #ec5242;
     margin-top: 1.5rem;
   }
 
-  h1 {
+  .abt-title {
     font-family: "Lato", sans-serif;
     font-weight: 900;
     font-size: 1.6rem;
@@ -555,7 +552,7 @@ $secondary: #ec5242;
     margin: 2rem 1rem;
     background-color: #fff;
 
-    p {
+    .abt-hero_desc {
       text-align: center;
 
       &:nth-child(2),
@@ -568,7 +565,7 @@ $secondary: #ec5242;
   .email {
     margin: 1rem 0;
 
-    a {
+    .mail {
       color: $primary;
       text-decoration: underline;
 
@@ -608,7 +605,7 @@ $secondary: #ec5242;
       margin: 0.5rem 0 2rem;
     }
 
-    p {
+    .creative_desc {
       text-align: center;
       width: 90%;
     }
@@ -618,7 +615,7 @@ $secondary: #ec5242;
     padding: 2rem;
     border: 1px solid gray;
 
-    img {
+    .abt-logo_img {
       align-self: center;
       width: 250px;
     }
@@ -650,7 +647,7 @@ $secondary: #ec5242;
       margin: 0.5rem 0 1.5rem;
     }
 
-    p {
+    .pSummit-desc {
       margin: 1rem 0;
       width: 85%;
       text-align: center;
@@ -665,7 +662,8 @@ $secondary: #ec5242;
 
     .img-container {
       position: relative;
-      img {
+
+      .past-event {
         width: 300px;
         height: 200px;
         object-fit: cover;
@@ -735,6 +733,7 @@ $secondary: #ec5242;
         flex-direction: row;
         justify-content: space-evenly;
         height: 8rem;
+
         img {
           width: 50px;
         }
@@ -784,7 +783,7 @@ $secondary: #ec5242;
   #footer {
     .footer-logo {
       .logo {
-        img {
+        .footer_logo {
           width: 150px;
         }
       }
@@ -792,20 +791,22 @@ $secondary: #ec5242;
   }
 
   #about-hero {
-    h3 {
+    .about-subtitle {
       font-size: 2rem;
     }
 
-    h1 {
+    .abt-title {
       font-size: 2.4rem;
     }
+
     .reachOut {
       width: 80%;
     }
 
     .abt-hero_text {
-      p {
+      .abt-hero_desc {
         margin: 0.5rem 0;
+
         &:nth-child(2) {
           display: block;
         }
@@ -832,11 +833,14 @@ $secondary: #ec5242;
       font-family: "Lato", sans-serif;
     }
   }
+
   #navigation {
     top: 2rem;
+
     #navlinks {
       display: block;
     }
+
     .toggle {
       display: none;
     }
@@ -844,11 +848,13 @@ $secondary: #ec5242;
 
   #hero {
     padding: 0 3.5rem 2rem;
+
     .intro {
       h2 {
         margin-top: 2.5rem;
         font-size: 2.4rem;
       }
+
       h1 {
         font-size: 3.5rem;
       }
@@ -858,7 +864,7 @@ $secondary: #ec5242;
       width: 90%;
       margin: 0.5rem 0;
 
-      p {
+      .prg-desc {
         font-size: 1.1rem;
       }
     }
@@ -884,10 +890,13 @@ $secondary: #ec5242;
       }
     }
   }
+
   #speakers {
     padding-bottom: 6.5rem;
+
     .cards {
       gap: 6rem;
+
       .card {
         .text {
           width: 67%;
@@ -907,7 +916,7 @@ $secondary: #ec5242;
   #footer {
     .footer-logo {
       .logo {
-        img {
+        .footer_logo {
           width: 200px;
         }
       }
@@ -916,7 +925,7 @@ $secondary: #ec5242;
     .footer-text {
       width: 60%;
 
-      p {
+      .copyright {
         span {
           display: none;
         }
@@ -925,12 +934,14 @@ $secondary: #ec5242;
   }
 
   #about-hero {
-    h3 {
+    .about-subtitle {
       font-size: 2.4rem;
     }
-    h1 {
+
+    .abt-title {
       font-size: 3.5rem;
     }
+
     .reachOut {
       width: 60%;
     }
@@ -954,6 +965,7 @@ $secondary: #ec5242;
 
   #hero {
     padding: 0 3.5rem 3rem;
+
     .intro {
       h2 {
         font-size: 2.8rem;
@@ -963,6 +975,7 @@ $secondary: #ec5242;
         font-size: 4rem;
       }
     }
+
     .desc {
       width: 65%;
     }
@@ -980,6 +993,7 @@ $secondary: #ec5242;
 
     .programs {
       flex-direction: row;
+
       .program {
         flex-direction: column;
         justify-content: flex-start;
@@ -995,7 +1009,6 @@ $secondary: #ec5242;
           width: 100%;
           font-size: 1.2rem;
           line-height: 1.5rem;
-          text-align: center;
           text-align: center;
         }
       }
@@ -1038,9 +1051,10 @@ $secondary: #ec5242;
       }
     }
   }
+
   #partners {
-    .container {
-      padding: 0 4.5rem;
+    .carousel-container {
+      width: 90%;
     }
   }
 
@@ -1050,7 +1064,7 @@ $secondary: #ec5242;
     .footer-text {
       width: 60%;
 
-      p {
+      .copyright {
         span {
           display: block;
         }
@@ -1059,15 +1073,16 @@ $secondary: #ec5242;
   }
 
   #about-hero {
-    h3 {
+    .about-subtitle {
       font-size: 2.8rem;
       display: none;
     }
 
-    h1 {
+    .abt-title {
       margin-top: 3rem;
       font-size: 4rem;
     }
+
     .reachOut {
       width: 50%;
     }
@@ -1077,7 +1092,7 @@ $secondary: #ec5242;
       padding: 1.2rem;
       margin: 1rem;
 
-      p {
+      .abt-hero_desc {
         &:nth-child(3) {
           display: block;
         }
@@ -1090,6 +1105,7 @@ $secondary: #ec5242;
   #program {
     .programs {
       padding: 0 3.5rem;
+
       .program {
         min-height: 27rem;
       }
@@ -1101,6 +1117,7 @@ $secondary: #ec5242;
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
       padding: 0 3.5rem;
+
       .card {
         .text {
           width: 58%;
@@ -1124,7 +1141,7 @@ $secondary: #ec5242;
   #footer {
     .footer-logo {
       .logo {
-        img {
+        .footer_logo {
           width: 250px;
         }
       }

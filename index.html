@@ -8,18 +8,6 @@
       src="https://kit.fontawesome.com/0ec53d8e70.js"
       crossorigin="anonymous"></script>
     <title>Music Conference</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
-
-    <!-- Add Slick Carousel JavaScript library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -34,12 +22,12 @@
       /></a>
       <nav id="navlinks">
         <ul class="navlinks">
-          <li class="link"><a href="about.html">About</a></li>
-          <li class="link"><a href="/">Program</a></li>
-          <li class="link"><a href="/">Join</a></li>
-          <li class="link"><a href="/">Sponsor</a></li>
-          <li class="link"><a href="/">News</a></li>
-          <li class="link"><a href="/">CC Campaign</a></li>
+          <li class="link"><a class="page" href="about.html">About</a></li>
+          <li class="link"><a class="page" href="/">Program</a></li>
+          <li class="link"><a class="page" href="/">Join</a></li>
+          <li class="link"><a class="page" href="/">Sponsor</a></li>
+          <li class="link"><a class="page" href="/">News</a></li>
+          <li class="link"><a class="page" href="/">CC Campaign</a></li>
         </ul>
       </nav>
       <div class="toggle">
@@ -83,7 +71,7 @@
         <div class="program">
           <img src="./assets/icon01.png" alt="lecture" />
           <h5>Panel Discussions</h5>
-          <p>
+          <p class="prg-desc">
             Listen to music industry experts from various countries as they
             share their insights on the latest trends and challenges in the
             music industry in East Africa.
@@ -92,7 +80,7 @@
         <div class="program">
           <img src="./assets/icon02.png" alt="exhibition" />
           <h5>Live Performances</h5>
-          <p>
+          <p class="prg-desc">
             Enjoy electrifying live performances by local and international
             artists who are pushing the boundaries of music in East Africa.
           </p>
@@ -100,7 +88,7 @@
         <div class="program">
           <img src="./assets/chat.png" alt="Forum" />
           <h5>Workshops</h5>
-          <p>
+          <p class="prg-desc">
             Participate in interactive workshops where you can learn new skills,
             exchange ideas, and network with fellow music professionals.
           </p>
@@ -108,7 +96,7 @@
         <div class="program">
           <img src="./assets/icon04.png" alt="workshop" />
           <h5>Masterclasses</h5>
-          <p>
+          <p class="prg-desc">
             Learn from industry veterans in exclusive masterclasses designed to
             enhance your music production, songwriting, and marketing skills.
           </p>
@@ -116,7 +104,7 @@
         <div class="program">
           <img src="./assets/icon05.png" alt="CC Ignite" />
           <h5>Networking</h5>
-          <p>
+          <p class="prg-desc">
             Connect with music industry stakeholders, build meaningful
             relationships, and explore collaboration opportunities in East
             Africa and beyond.
@@ -124,7 +112,7 @@
         </div>
       </div>
       <div class="seePrg">
-        <a href="/">See the Full Program</a>
+        <a class="seePrg-link" href="/">See the Full Program</a>
         <button type="button">Join East Africa Music Conference 2023</button>
       </div>
     </section>
@@ -135,32 +123,22 @@
         <h2>Partner</h2>
         <hr />
       </div>
-      <div class="container slider">
-        <div class="partner-logo">
-          <img
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img class="slider-logo"
             src="./assets/bettercloud-seeklogo.com-3.svg"
             alt="bettercloud" />
-        </div>
-        <div class="partner-logo">
-          <img src="./assets/chainx-seeklogo.com-3.svg" alt="chainx" />
-        </div>
-        <div class="partner-logo">
-          <img
+          <img class="slider-logo" src="./assets/chainx-seeklogo.com-3.svg" alt="chainx" />
+          <img class="slider-logo"
             src="./assets/microsoft-windows-seeklogo.com.svg"
             alt="microsoft-windows" />
-        </div>
-        <div class="partner-logo">
-          <img
+          <img class="slider-logo"
             src="./assets/stack-bidmachine-seeklogo.com-3.svg"
             alt="stack-bidmachine" />
-        </div>
-        <div class="partner-logo">
-          <img
+          <img class="slider-logo"
             src="./assets/onduo-by-verily-seeklogo.com-3.svg"
             alt="onduo-by-verily" />
-        </div>
-        <div class="partner-logo">
-          <img src="./assets/steelorbis-seeklogo.com-3.svg" alt="steelorbis" />
+          <img class="slider-logo" src="./assets/steelorbis-seeklogo.com-3.svg" alt="steelorbis" />
         </div>
       </div>
     </section>
@@ -168,11 +146,11 @@
     <footer id="footer">
       <div class="footer-logo">
         <a href="/" class="logo"
-          ><img src="./assets/Logo.png" alt="Harmony_Hub"
+          ><img class="footer_logo" src="./assets/Logo.png" alt="Harmony_Hub"
         /></a>
       </div>
       <div class="footer-text">
-        <p>
+        <p class="copyright">
           Copyright © 2023 Harmony Hub. All rights reserved.
           <span
             >Designed and developed for the music-conference by Harmony
@@ -183,6 +161,6 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </body>
 </html>
