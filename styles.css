@@ -460,6 +460,7 @@
 #partners .carousel-container .carousel-slide {
   display: inline-block;
   animation: slide 8s infinite linear;
+  animation-play-state: paused;
 }
 
 #partners .carousel-container .carousel-slide .slider-logo {

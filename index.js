@@ -135,8 +135,12 @@ function renderSpeakersOnHomePage(speakersData) {
 
 renderSpeakersOnHomePage(speakersData);
 
-const copy = document.querySelector('.carousel-slide').cloneNode(true);
-document.querySelector('.carousel-container').appendChild(copy);
+window.addEventListener('load', () => {
+  const slides = document.querySelectorAll('.carousel-slide');
+  for (let i = 0; i < slides.length; i += 1) {
+    slides[i].style.animationPlayState = 'running';
+  }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.toggle');
