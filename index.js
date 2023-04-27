@@ -135,6 +135,9 @@ function renderSpeakersOnHomePage(speakersData) {
 
 renderSpeakersOnHomePage(speakersData);
 
+const copy = document.querySelector('.carousel-slide').cloneNode(true);
+document.querySelector('.carousel-container').appendChild(copy);
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.toggle');
   const navlinks = document.querySelector('#navlinks');
@@ -151,9 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navlinks.classList.remove('open');
     });
   });
-
-  const copy = document.querySelector('.carousel-slide').cloneNode(true);
-  document.querySelector('.carousel-container').appendChild(copy);
 
   const eventDate = new Date('2023-05-10T10:00:00Z');
 
