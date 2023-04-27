@@ -7,7 +7,7 @@
 - [📖 About the project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-        - [Key Features](#key-features)
+      - [Key Features](#key-features)
     - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -25,8 +25,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [My_Portfolio] <a name="About-project"></a>
+# 📖 [East Africa Music Conference] <a name="About-project"></a>
+
 The East Africa Music Conference is a two-day event that brings together music industry professionals and enthusiasts from East Africa and beyond. This year's conference aims to explore the current state and future of the music industry in East Africa, with a focus on promoting collaboration, innovation and growth.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -39,19 +41,25 @@ The East Africa Music Conference is a two-day event that brings together music i
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
--[Expert Speakers]: Our conference features top music industry experts from East Africa and around the world, providing attendees with unique insights and valuable networking opportunities.
--[Diverse Topics]: We cover a wide range of topics, including music production, distribution, marketing, and legal issues. Our sessions are tailored to meet the needs of musicians, producers, managers, and other industry professionals.
--[Engaging Workshops]: Attendees can participate in interactive workshops, where they can learn new skills and techniques from experienced professionals.
--[Networking Opportunities]: Our conference provides a platform for attendees to connect with peers and industry professionals, fostering collaboration and new business opportunities.
--[Innovative Technology]: We showcase the latest music technology and equipment, giving attendees hands-on experience with cutting-edge tools and software.
--[Cultural Diversity]: Our conference celebrates the rich diversity of East African music and culture, highlighting the unique styles and traditions of the region.
+
+## Expert Speakers : Our conference features top music industry experts from East Africa and around the world, providing attendees with unique insights and valuable networking opportunities.
+
+## Diverse Topics : We cover a wide range of topics, including music production, distribution, marketing, and legal issues. Our sessions are tailored to meet the needs of musicians, producers, managers, and other industry professionals.
+
+## Engaging Workshops : Attendees can participate in interactive workshops, where they can learn new skills and techniques from experienced professionals.
+
+## Networking Opportunities : Our conference provides a platform for attendees to connect with peers and industry professionals, fostering collaboration and new business opportunities.
+
+## Innovative Technology : We showcase the latest music technology and equipment, giving attendees hands-on experience with cutting-edge tools and software.
+
+## Cultural Diversity : Our conference celebrates the rich diversity of East African music and culture, highlighting the unique styles and traditions of the region.
+
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]( https://prg-04.github.io/My_Portfolio/)
+- [Live Demo Link](https://prg-04.github.io/My_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,6 +100,7 @@ Clone this repository to your desired folder:
     -Write the following command in the terminal: git clone followed by the URL of the repository you want to clone.
     -Press Enter on your keyboard.
     -Git will start cloning the repository into your selected folder.
+
 After cloning the repository, navigate to the directory where it was cloned using the command: cd <folder-name>. In this case, the folder name is "EA_Music_Conference". This will give you access to the files needed to run the website.
 
 Once you have access to the files, you can open the index.html file in your web browser to view the website.
