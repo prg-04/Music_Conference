@@ -470,6 +470,7 @@ $secondary: #ec5242;
     .carousel-slide {
       display: inline-block;
       animation: slide 8s infinite linear;
+      animation-play-state: paused;
 
       .slider-logo {
         height: 150px;

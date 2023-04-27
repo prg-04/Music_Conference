@@ -49,6 +49,8 @@ const speakersData = [
   },
 ];
 
+
+
 const div = document.createElement('div');
 div.className = 'spkr-ttl';
 div.innerHTML = `
@@ -60,6 +62,12 @@ function createBtn() {
   const btn = document.createElement('button');
   return btn;
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const carouselSlides = document.querySelectorAll(".carousel-slide");
+  carouselSlides.forEach((slide) => {
+    slide.style.animationPlayState = "running"; // Start the animation
+  });
+});
 
 const cardBtns = document.createElement('div');
 cardBtns.className = 'card-btns';
@@ -135,9 +143,6 @@ function renderSpeakersOnHomePage(speakersData) {
 
 renderSpeakersOnHomePage(speakersData);
 
-const copy = document.querySelector('.carousel-slide').cloneNode(true);
-document.querySelector('.carousel-container').appendChild(copy);
-
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.toggle');
   const navlinks = document.querySelector('#navlinks');
@@ -212,3 +217,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+
