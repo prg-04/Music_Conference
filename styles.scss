@@ -287,7 +287,7 @@ $secondary: #ec5242;
   .desc {
     background-color: #fff;
     margin: 1rem 0;
-    
+
 
     .prg-desc {
       font-family: "Lato", sans-serif;
@@ -950,6 +950,7 @@ $secondary: #ec5242;
 
     .abt-hero_text {
       width: 80%;
+
       .abt-hero_desc {
         font-size: 1.1rem;
       }
@@ -1119,16 +1120,15 @@ $secondary: #ec5242;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-
-
     }
   }
+
   #past-summit {
-     .pSummit-ttl {
-    .pSummit-desc {
-      font-size: 1.1rem;
+    .pSummit-ttl {
+      .pSummit-desc {
+        font-size: 1.1rem;
+      }
     }
-  }
   }
 }
 
@@ -1189,7 +1189,8 @@ $secondary: #ec5242;
       height: 2.5rem;
     }
   }
-   #creative {
+
+  #creative {
     .creative-ttl {
       .creative_desc {
         width: 70%;
