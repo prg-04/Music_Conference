@@ -49,8 +49,6 @@ const speakersData = [
   },
 ];
 
-
-
 const div = document.createElement('div');
 div.className = 'spkr-ttl';
 div.innerHTML = `
@@ -62,10 +60,10 @@ function createBtn() {
   const btn = document.createElement('button');
   return btn;
 }
-document.addEventListener("DOMContentLoaded", () => {
-  const carouselSlides = document.querySelectorAll(".carousel-slide");
+document.addEventListener('DOMContentLoaded', () => {
+  const carouselSlides = document.querySelectorAll('.carousel-slide');
   carouselSlides.forEach((slide) => {
-    slide.style.animationPlayState = "running"; // Start the animation
+    slide.style.animationPlayState = 'running'; // Start the animation
   });
 });
 
@@ -225,5 +223,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
-
-

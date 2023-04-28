@@ -59,7 +59,7 @@ The East Africa Music Conference is a two-day event that brings together music i
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://prg-04.github.io/My_Portfolio/)
+- [Live Demo Link](https://www.loom.com/share/3e3b6ab44f4f47568bad05951002af12)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
