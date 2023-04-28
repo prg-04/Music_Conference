@@ -69,7 +69,7 @@ The East Africa Music Conference is a two-day event that brings together music i
 
 - To access the EA Music Conference website, follow these steps:
 
-- Open your preferred web browser and go to the website's URL: https://eamusicconference.com.
+- Open your preferred web browser and go to the website's URL: https://ea-music-conference.netlify.app/.
 
 - Once you are on the website, you can navigate through the different pages using the menu bar at the top of the screen.
 
