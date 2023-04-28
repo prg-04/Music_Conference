@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [East Africa Music Conference] <a name="About-project"></a>
+# 📖 East Africa Music Conference <a name="About-project"></a>
 
 The East Africa Music Conference is a two-day event that brings together music industry professionals and enthusiasts from East Africa and beyond. This year's conference aims to explore the current state and future of the music industry in East Africa, with a focus on promoting collaboration, innovation and growth.
 
