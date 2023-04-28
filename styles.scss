@@ -197,8 +197,7 @@ $secondary: #ec5242;
       align-items: center;
       flex-direction: column;
       padding: 1rem;
-      background-image: url("./assets/diamond.png");
-      background-color: rgba(93, 93, 93, 0.4);
+      background-color: rgba(93, 93, 93, 0.3);
       height: 15rem;
       width: 100%;
 
@@ -288,6 +287,7 @@ $secondary: #ec5242;
   .desc {
     background-color: #fff;
     margin: 1rem 0;
+    
 
     .prg-desc {
       font-family: "Lato", sans-serif;
@@ -945,16 +945,28 @@ $secondary: #ec5242;
 
     .reachOut {
       width: 60%;
+      font-size: 1rem;
     }
 
     .abt-hero_text {
       width: 80%;
+      .abt-hero_desc {
+        font-size: 1.1rem;
+      }
     }
   }
 
   #past-summit {
     .past-summit_imgs {
       flex-direction: row;
+    }
+  }
+
+  #creative {
+    .creative-ttl {
+      .creative_desc {
+        font-size: 1.1rem;
+      }
     }
   }
 }
@@ -978,7 +990,7 @@ $secondary: #ec5242;
     }
 
     .desc {
-      width: 65%;
+      width: 50%;
     }
 
     .date {
@@ -1099,6 +1111,24 @@ $secondary: #ec5242;
         }
       }
     }
+
+    .email {
+      background-color: #fff;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+
+    }
+  }
+  #past-summit {
+     .pSummit-ttl {
+    .pSummit-desc {
+      font-size: 1.1rem;
+    }
+  }
   }
 }
 
@@ -1146,6 +1176,10 @@ $secondary: #ec5242;
           width: 250px;
         }
       }
+
+      .footer-text {
+        width: 70%;
+      }
     }
   }
 
@@ -1153,6 +1187,13 @@ $secondary: #ec5242;
     .reachOut {
       background-color: #fff;
       height: 2.5rem;
+    }
+  }
+   #creative {
+    .creative-ttl {
+      .creative_desc {
+        width: 70%;
+      }
     }
   }
 }
@@ -1174,5 +1215,9 @@ $secondary: #ec5242;
         }
       }
     }
+  }
+
+  #footer {
+    justify-content: space-around;
   }
 }
